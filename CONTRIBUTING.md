@@ -18,14 +18,6 @@ Add a skill by copying the template, generalizing it, and listing it in the READ
 
 4. Add a row to the index in [README.md](README.md): name, one-line description, link.
 
-5. Check the frontmatter:
-
-   ```bash
-   python3 scripts/validate_skills.py
-   ```
-
-The same check runs on pull requests.
-
 ## Generalize a skill that came from work
 
 A skill written on a real project is not ready to publish until a stranger could use it. Walk this list before opening a pull request:
