@@ -6,7 +6,9 @@ A skill is a folder with a `SKILL.md` file. Agents read its `name` and `descript
 
 ## Skills
 
-No implemented skills are currently included. The [`skills/_template`](skills/_template) directory provides a starting point for adding a skill.
+| Name | Description | Link |
+| --- | --- | --- |
+| audit-skills | Audit skill quality and report observed usage over the past 90 days. | [SKILL.md](skills/audit-skills/SKILL.md) |
 
 ## Philosophy
 
