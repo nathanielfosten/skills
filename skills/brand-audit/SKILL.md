@@ -1,57 +1,60 @@
 ---
 name: brand-audit
-description: Audits how well an artifact, experience, or proposed decision follows a company's brand guidance. Use when asked to check whether work is on-brand, review brand adherence, compare brand fit across options, or identify brand-specific changes.
+description: Audits a brand's identity and consistency across its public presence, or assesses how well a specific piece of work fits that brand. Use when asked to audit a company’s brand, review brand consistency, or judge whether something is on-brand. Includes simulated audience reviews with criteria weighted for each audience.
 ---
 
 # Brand audit
 
-Assess the supplied work against the company's actual brand guidance. Produce an evidence-backed judgment and prioritized corrections that anyone acting for the brand can use.
+Investigate how a brand presents itself and assess how coherently that identity comes through in the work being reviewed. Ground the assessment in observed examples and explain what would improve it. This workflow works with a company name, website, or supplied materials. Brand guidelines are optional evidence.
 
-## Establish the work and brand
+## Establish the scope
 
-Identify the artifact or decision under review, the company, its intended audience, purpose, channel, and relevant version or state. Use the request and accessible project context to resolve these. Ask for missing inputs when they materially affect the judgment, while continuing checks that have sufficient evidence.
+Identify the company and whether the request concerns its overall presence or a specific artifact, campaign, product, or experience. Use the user's request to set the scope. Ask a focused question if the brand's identity or the review target is ambiguous. Keep a review of one piece focused on that piece, using the broader brand as context.
 
-Locate the brand guidance and its supporting examples. Follow the user's designated source of truth and any documented precedence or exceptions. Record source versions or dates when available. Public materials can supply examples, but their existence alone does not establish an approved rule. If no authoritative guidance is available, ask for it or offer a provisional consistency review based on identified reference work, clearly labeling that basis.
+Identify the relevant audience, purpose, market, channel, and time period from the brief and available evidence. Mark assumptions that could change the assessment. Use context from another project only when the user connects it to this audit.
 
-For a Brand OS collection, start with `signature-moves.md`, then consult the relevant guides under `brand/verbal/` and `brand/visual/`, plus `brand/styles/` and `brand/assets/` when exact values or approved files matter. Treat bracketed prompts, illustrative examples, and open questions as unfinished guidance. These paths are a discovery convention; other brand systems can supply the same evidence in different formats.
+## Research the brand
 
-Resolve applicable audience, channel, campaign, product, and regional exceptions before raising a violation. If sources conflict and precedence is unclear, show the conflict and how it affects the assessment. Continue findings supported by unambiguous guidance.
+Inspect the company's current website and a representative selection of relevant touchpoints, such as product pages, packaging, social channels, campaigns, presentations, or customer communications. Verify that sources belong to the intended company. Follow the user's source and access constraints. When working from supplied materials alone, describe that coverage.
 
-## Inspect the actual experience
+Choose examples that reveal both recurring choices and meaningful variations. Record their source, date when available, audience, and context. Inspect actual pages, images, copy, and accessible experiences rather than relying on search snippets. Add sources when the sample is too narrow or contradictory to support a conclusion.
 
-Read the copy or decision and inspect the artifact in its intended form using available tools. Render documents or slides when layout matters, view images, and inspect accessible interface states for websites and apps. For motion or interaction, use a recording or live behavior when available. Use source code and tokens to verify implementation details where relevant.
+Build a concise working description of the brand from the evidence.
 
-State exactly what was inspected, including pages, screens, states, viewport sizes, or timestamps. Disclose sampling. A screenshot supports visible findings but cannot verify unseen interactions, exact font files, or runtime behavior. Code supports implementation claims but cannot establish rendered quality by itself. Mark inaccessible or unobservable aspects as unassessed.
+- Who it appears to serve, the need it addresses, and the promise it makes.
+- The messages, claims, vocabulary, and tone it repeats.
+- The recognizable visual choices in its identity, imagery, typography, color, and composition.
+- The behavior and interaction choices observable in its products or experiences.
+- The elements that make it recognizable and the ways its expression changes by context.
 
-## Compare applicable brand decisions
+Support each important characterization with examples. Distinguish the company's explicit statements from patterns inferred across its work. Describe intended audience and positioning as inferences when the sources do not state them. Customer perception, commercial effectiveness, and competitive distinctiveness require evidence appropriate to those claims.
 
-Build a working set of applicable rules with their source, context, and observable evidence. Review the dimensions supported by both the artifact and the brand material.
+If guidelines or approved assets are available, use them alongside observed work. Explain material conflicts between stated guidance and current practice. Check for a rebrand, campaign treatment, sub-brand, regional difference, or historical material before treating variation as inconsistency. An isolated example has limited weight in establishing the broader identity.
 
-- Audience and positioning, including whether the work serves the intended need and expresses the brand's role and promise.
-- Messaging and claims, including required proof, differentiation, product names, and approved terminology.
-- Voice and tone, including how delivery changes with the situation and the audience's state.
-- Visual expression, including logos and assets, art direction, typography, color roles, composition, spacing, graphic elements, and effects.
-- Behavior and motion, including interaction choices, transitions, timing, and documented reduced-motion treatments.
-- Signature moves, including whether recognizable choices are used effectively in contexts where they fit. Their absence is a violation only when the guidance requires them for that context.
+## Establish audience criteria and weights
 
-Assess the combined impression as well as individual rules. Correct token values can coexist with a composition or message that conflicts with the brand. Explain that judgment through concrete choices and cited guidance. Avoid treating personal taste or general design advice as a brand requirement. Report an independently important usability or accessibility issue with its own basis and explain any conflict with the brand guidance.
+Read [Audience review and scoring](references/audience-review.md). Derive audience profiles for the specific brand and work from the brief and research. Describe their relationship to the brand, familiarity, intent, situation, stakes, and constraints. Select profiles whose different situations could materially change the assessment. Label assumed profiles and simulated perspectives clearly.
 
-Use exact measurements only when the source and inspection method support them. Label interpretive judgments and explain the evidence. An unspecified choice remains a gap in guidance unless other applicable rules establish a mismatch.
+Use the six defined criteria of clarity, relevance, credibility, brand recognition and coherence, voice and emotional fit, and experience and usability. Assign and explain a separate set of weights totaling 100 percent for each audience before scoring. Review from each audience's perspective and cite the observed evidence behind its scores. Keep profile-specific results, confidence, and assessment coverage visible in the report.
 
-## Report findings and corrections
+## Assess the work
 
-Lead with a concise judgment of brand fit, the most consequential reason, and the limits of the review. Name the reviewed work and brand sources. Use qualitative conclusions by default. If the user requests a score, define the rubric, weighting, treatment of unassessed criteria, and coverage before presenting it. A numeric score must be traceable to assessed criteria.
+Inspect the target in its intended form. Read the copy, view the design, render documents when layout matters, and inspect relevant live states or recordings when behavior matters. State what was inspected and what remains inaccessible. A still image supports visual findings; movement and interaction require additional evidence.
 
-For each actionable finding provide the following information, combining fields when that improves readability.
+For an overall brand audit, assess whether the touchpoints communicate a coherent, recognizable identity and promise. Look for clarity, consistency, credible support for claims, and meaningful variation for different audiences and situations. For an adherence review, compare the target with the established brand patterns and any applicable explicit guidance.
 
-- The exact location in the work, such as a quoted line, page, screen element, interaction state, or timestamp.
-- The observed choice and the applicable brand rule, with a source reference for each.
-- Its effect on brand recognition, meaning, trust, or consistency in the stated context.
-- A priority based on that effect and reach. Distinguish a documented violation from an interpretive mismatch or unresolved guidance.
-- A concrete correction that preserves the artifact's purpose. Cite the rule the correction satisfies and label proposed wording or design treatments as suggestions until approved.
+Evaluate the dimensions that matter to the target, including positioning, messaging, voice, visual identity, imagery, composition, and experience. Explain how the choices work together. Connect findings to specific evidence instead of relying on adjectives such as premium, modern, or authentic without explaining what produces that impression.
 
-Group repeated instances of the same issue and identify their extent. Include a few specific choices that already express the brand well when supported by evidence, so they can be preserved during revision. List unresolved questions and unassessed dimensions that could change the judgment.
+Treat a departure from a documented rule as a compliance issue only when that rule applies. For an inferred pattern, explain the strength of the pattern and why the departure helps or weakens the work in context. Consistency allows purposeful variation. A new execution can fit the brand without copying an existing example.
 
-Before delivering, check that every alleged violation has an applicable rule and observed evidence, every proposed correction fits the same guidance, and inaccessible aspects have not silently passed. If no supported violations are found, state the inspected scope and remaining uncertainty.
+Keep brand judgments grounded in the company's identity and the audience's situation. State the independent basis for general usability, accessibility, or design concerns. Use measurements only when the available files or inspection method support them. Avoid claiming audience reactions or business outcomes from appearance alone.
 
-An audit produces findings and proposed corrections. Apply edits when the current request authorizes them, then recheck the affected work against the same criteria and report what was verified. Use the user's requested report format and destination; otherwise deliver the report in chat.
+## Deliver the audit
+
+Start with a clear assessment of the brand or the target's fit, supported by the most consequential observations. Summarize the brand identity used as the basis for the review and the materials inspected so the user can challenge the interpretation.
+
+For each substantive finding, identify the location and observed choice, cite the relevant comparison or stated guidance, explain why it matters, and recommend a concrete improvement. Prioritize by the likely effect on recognition, understanding, credibility, or consistency, and explain that reasoning. Mark interpretations and uncertain conclusions where they occur.
+
+Include effective choices worth preserving and group recurring issues instead of repeating the same finding for every instance. Identify gaps in evidence that could change the assessment. Include the audience profiles, weight rationales, criterion scores, evidence, coverage, and weighted results using the linked rubric. Explain where audience judgments differ and what tradeoffs a recommendation introduces. Keep the overall brand assessment alongside the audience results. Honor a request for a qualitative-only audit.
+
+Deliver in the user's requested format, otherwise use a concise report in chat. Proposed copy or design changes should be clearly presented as recommendations. Apply changes only when requested, then reassess the affected work. Before delivering, verify that the recommendations follow from the cited evidence and preserve the purpose of the work.
