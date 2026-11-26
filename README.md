@@ -9,6 +9,7 @@ A skill is a folder with a `SKILL.md` file. Agents read its `name` and `descript
 | Name | Description | Link |
 | --- | --- | --- |
 | audit-skills | Audit skill quality and report observed usage over the past 90 days. | [SKILL.md](skills/audit-skills/SKILL.md) |
+| extract-skill | Turn completed work into a reusable skill grounded in observed results. | [SKILL.md](skills/extract-skill/SKILL.md) |
 
 ## Philosophy
 
